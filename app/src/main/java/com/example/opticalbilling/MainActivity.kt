@@ -41,6 +41,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun BillingScreen(onCreateBill: (String,String,String,Int,Double,Double,Double)->Unit) {
     var name by remember { mutableStateOf("") }
